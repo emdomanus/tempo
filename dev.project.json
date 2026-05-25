@@ -1,0 +1,25 @@
+{
+  "name": "tempo-dev",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "packages": {
+        "$className": "Folder",
+        "$path": "Packages",
+        "tempo": {
+          "$path": "src"
+        }
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": { 
+        "$className": "StarterPlayerScripts",
+        "tempoDev": {
+          "$path": "dev/client"
+        }
+      }
+    }
+  }
+}
