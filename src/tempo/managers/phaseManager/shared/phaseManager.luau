@@ -3,7 +3,7 @@
 --!native
 
 local Types = require(script.Parent.Parent.Parent.Parent.types)
-local Hook = require(script.Parent.Parent.Parent.Parent.Parent.roblox_packages.hook)
+local AdvancedUtils = require(script.Parent.Parent.Parent.Parent.Parent.externalPackages.advancedUtils)
 
 type Phase = Types.Phase<any>
 type PhaseCallback = Types.PhaseCallback
@@ -18,7 +18,7 @@ function PhaseManager.createState(token: Phase): PhaseState
 		heapSize = 0,
 		nextQueue = {},
 		nextCount = 0,
-		callbacks = Hook.new(),
+		callbacks = AdvancedUtils.core.hook.new(),
 		evaluator = nil,
 	}
 end

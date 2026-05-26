@@ -2,7 +2,15 @@
 
 Tempo is a phase-aware scheduler for Roblox.
 
-It is built around explicit phase tokens, numeric task ids, pooled records, Hook-backed phase subscribers, and per-phase heaps. The library does not connect itself to `RunService`; callers bind phases to whatever driver they want.
+It is built around explicit phase tokens, numeric task ids, pooled records, `advancedUtils` Hook-backed phase subscribers, and per-phase heaps. The library does not connect itself to `RunService`; callers bind phases to whatever driver they want.
+
+Tempo uses pesde for dependencies, including the public `advanced_utils` package through the `advancedUtils` alias. Run this after cloning:
+
+```sh
+pesde install
+```
+
+The dev Rojo project mounts the generated `roblox_packages` folder beside Tempo under `ReplicatedStorage.packages`.
 
 ```lua
 local RunService = game:GetService("RunService")
